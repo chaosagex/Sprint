@@ -9,12 +9,12 @@ Copy
         // Enable pusher logging - don't include this in production
         Pusher.logToConsole = true;
 
-        var pusher = new Pusher('fa7ee674664954c1f5be', {
+        var pusher = new Pusher('448486c547d013582aeb', {
             cluster: 'eu'
         });
 
-        var channel = pusher.subscribe('my-channel');
-        channel.bind('my-event', function(data) {
+        var channel = pusher.subscribe('test');
+        channel.bind('msg', function(data) {
             alert(JSON.stringify(data));
         });
     </script>

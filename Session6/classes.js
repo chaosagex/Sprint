@@ -25,8 +25,8 @@ class Board {
 }
 
 class Piece {
-  #_x;
-  #_y;
+  // #_x;
+  // #_y;
   constructor(board, x, y, type, team) {
     this.board = board;
     this.team = team;
